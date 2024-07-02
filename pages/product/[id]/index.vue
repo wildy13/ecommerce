@@ -39,7 +39,8 @@ const data = computed(() => {
                 </div>
                 <div class="w-full md:w-[80%] md:mx-32 pr-4">
                     <div class="text-center sm:text-left text-lg md:text-4xl">{{ data.name }}</div>
-                    <div class="text-center sm:text-left text-lg text-orange-500">Rp {{ formatCurrency(data.price) }}</div>
+                    <div class="text-center sm:text-left text-lg text-orange-500">Rp {{ formatCurrency(data.price) }}
+                    </div>
                     <div class="text-justify font-montserrat px-4 sm:px-0 py-2">
                         {{ data.description }}
                     </div>
@@ -47,7 +48,25 @@ const data = computed(() => {
             </div>
         </div>
         <div v-else>
-            <div>Loading...</div>
+            <div class="flex flex-col justify-center items-center h-screen space-y-4">
+                <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+                <div class="text-lg animate-pulse">Loading ...</div>
+            </div>
         </div>
     </div>
 </template>
+
+<style>
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite;
+}
+</style>
