@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^5.0.18",
+    "@fontsource/pt-serif": "^5.0.21",
+    "@nuxt/ui": "^2.17.0",
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/nuxt": "^10.11.0",
+    "axios": "^1.7.2",
+    "nuxt": "^3.12.2",
+    "vue": "latest"
+  }
+}
