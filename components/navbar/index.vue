@@ -17,12 +17,12 @@
                     </NuxtLink>
                 </div>
                 <div>
-                    <NuxtLink>
+                    <NuxtLink to="/products/women/">
                         WOMEN
                     </NuxtLink>
                 </div>
                 <div>
-                    <NuxtLink>
+                    <NuxtLink to="/products/men/">
                         MEN
                     </NuxtLink>
                 </div>

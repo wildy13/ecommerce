@@ -9,7 +9,7 @@ const items = ref([]);
 
 const getItems = async () => {
     try {
-        const response = await axios.get('/items.json');
+        const response = await axios.get('/products.json');
         items.value = response.data;
     } catch (error) {
         console.error('Error fetching items:', error);
