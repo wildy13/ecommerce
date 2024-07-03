@@ -35,7 +35,7 @@ const data = computed(() => {
         <div v-if="data">
             <div class="flex flex-col justify-center items-center space-y-1 sm:flex-row md:justify-around w-full">
                 <div class="w-full lg:w-1/2 flex items-center justify-center">
-                    <img :src="data.img" :alt="data.name" class="w-72 h-72">
+                    <img :src="data.img" :alt="data.name" class="w-72 h-72 mix">
                 </div>
                 <div class="w-full md:w-[80%] md:mx-32 pr-4">
                     <div class="text-center sm:text-left text-lg md:text-4xl">{{ data.name }}</div>

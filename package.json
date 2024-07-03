@@ -17,8 +17,5 @@
     "axios": "^1.7.2",
     "nuxt": "^3.12.2",
     "vue": "latest"
-  },
-  "devDependencies": {
-    "@nuxtjs/color-mode": "^3.4.2"
   }
 }

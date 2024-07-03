@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     '@fontsource/montserrat/400.css',
   ],
 
-  modules: ['@nuxt/ui', '@vueuse/nuxt','@nuxtjs/color-mode'],
+  modules: ['@nuxt/ui', '@vueuse/nuxt'],
 
   colorMode: {
     preference: 'light',
