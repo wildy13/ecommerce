@@ -7,12 +7,12 @@
             <div
                 class="flex justify-center items-center space-x-4 mx-4 py-2 border-t-2 border-b-2 font-ptserif text-[#94A3B8]">
                 <div>
-                    <NuxtLink to="/home">
+                    <NuxtLink to="/">
                         HOME
                     </NuxtLink>
                 </div>
                 <div>
-                    <NuxtLink to="/">
+                    <NuxtLink to="/products/all/">
                         ALL
                     </NuxtLink>
                 </div>
