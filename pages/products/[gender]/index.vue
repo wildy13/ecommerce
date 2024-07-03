@@ -48,6 +48,9 @@ watch([items, gender], updateGenderItems);
             </div>
     </div>
     <div v-else>
-        <p>Loading...</p>
+        <div class="flex flex-col justify-center items-center h-screen space-y-4">
+                <div class="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-blue-500"></div>
+                <div class="text-lg animate-pulse">Loading ...</div>
+            </div>
     </div>
 </template>
