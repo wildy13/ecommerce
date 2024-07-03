@@ -12,10 +12,14 @@
     "@fontsource/montserrat": "^5.0.18",
     "@fontsource/pt-serif": "^5.0.21",
     "@nuxt/ui": "^2.17.0",
-    "@vueuse/core": "^10.11.0",
-    "@vueuse/nuxt": "^10.11.0",
+    "@pinia/nuxt": "^0.5.1",
     "axios": "^1.7.2",
     "nuxt": "^3.12.2",
-    "vue": "latest"
+    "pinia": "^2.1.7",
+    "vue": "3.3.13"
+  },
+  "devDependencies": {
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/nuxt": "^10.11.0"
   }
 }

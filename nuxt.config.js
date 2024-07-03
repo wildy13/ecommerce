@@ -12,6 +12,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   devtools: { enabled: false },
 
   css: [
@@ -20,11 +21,11 @@ export default defineNuxtConfig({
     '@fontsource/montserrat/400.css',
   ],
 
-  modules: ['@nuxt/ui', '@vueuse/nuxt'],
+  modules: ['@nuxt/ui','@pinia/nuxt', '@vueuse/nuxt'],
 
   colorMode: {
     preference: 'light',
   },
-  
-  
+
+  compatibilityDate: '2024-07-03',
 })

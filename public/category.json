@@ -1,0 +1,14 @@
+[
+    {
+        "_id" : "1",
+        "name" : "Shoes"
+    },
+    {
+        "_id" : "2",
+        "name": "T-Shirt"
+    },
+    {
+        "_id" : "3",
+        "name" : "Watch"
+    }
+]
