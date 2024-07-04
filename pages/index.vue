@@ -12,8 +12,8 @@ const isOpen = ref(true);
             <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
                 <template #header>
                     <div class="flex items-center justify-between">
-                        <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
-                            Notification
+                        <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white uppercase">
+                            Announcement
                         </h3>
                         <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1"
                             @click="isOpen = false" />
@@ -21,7 +21,7 @@ const isOpen = ref(true);
                 </template>
                 <div class="p-4">
                     <p class="text-gray-800 dark:text-gray-200">
-                        Announcement: This website is a static site intended solely for display purposes.
+                        This website is a static site intended solely for display purposes.
                         Should you have any requests or inquiries, please contact the developer listed below:
                     </p>
                     <div class="mt-4">
