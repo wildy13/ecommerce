@@ -1,20 +1,21 @@
 <script setup>
 import { ref, onMounted } from 'vue';
-import { useProductsStore } from '../../../stores/products'
+import axios from 'axios';
 
-const store = useProductsStore();
+const items = ref([]);
 
-const {
-    pending,
-    error,
-    execute,
-} = useLazyAsyncData(() => store.getAll(), {
-    immediate: false,
-});
+const getItems = async () => {
+    try {
+        const response = await axios.get('/products.json');
+        items.value = response.data;
+    } catch (error) {
+        console.error('Error fetching items:', error);
+    }
+};
 
 
 onMounted(async () => {
-    await execute();
+    await getItems();
 });
 
 const formatCurrency = (value) => {
@@ -26,7 +27,7 @@ const formatCurrency = (value) => {
     <div class="w-full h-full">
         <section>
             <div class="py-5 grid justify-items-center grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div v-for="item in store.items" :key="item._id" class="font-ptserif space-y-2">
+                <div v-for="item in items" :key="item._id" class="font-ptserif space-y-2">
                     <img :src="item.img" alt="product-1" class="w-52 h-52">
                     <div class="text-center text-lg">{{ item.name }}</div>
                     <div class="text-center text-lg text-orange-500">Rp {{ formatCurrency(item.price) }}</div>

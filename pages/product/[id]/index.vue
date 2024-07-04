@@ -57,7 +57,7 @@ const addToCart = () => {
 </script>
 <template>
     <div class="w-full font-ptserif">
-        <div v-if="data">{{ cart }}
+        <div v-if="data">
             <div class="flex flex-col justify-center items-center space-y-1 sm:flex-row md:justify-around w-full">
                 <div class="w-full lg:w-1/2 flex items-center justify-center">
                     <img :src="data.img" :alt="data.name" class="w-72 h-72 mix">

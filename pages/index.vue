@@ -1,5 +1,42 @@
+<script setup>
+import { ref } from 'vue';
+
+const isOpen = ref(true);
+</script>
+
 <template>
     <div>
+
+        <UModal v-model="isOpen" prevent-close class="w-full h-screen bg-red-400"
+            :ui="{ container: 'w-full h-full flex justify-center items-center' }">
+            <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
+                <template #header>
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
+                            Notification
+                        </h3>
+                        <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1"
+                            @click="isOpen = false" />
+                    </div>
+                </template>
+                <div class="p-4">
+                    <p class="text-gray-800 dark:text-gray-200">
+                        Announcement: This website is a static site intended solely for display purposes.
+                        Should you have any requests or inquiries, please contact the developer listed below:
+                    </p>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Developer Contact Information:
+                        </h4>
+                        <p class="text-gray-700 dark:text-gray-300">Name: Wildy</p>
+                        <p class="text-gray-700 dark:text-gray-300">Email: <a href="mailto:simanjuntakwildy@gmail.com"
+                                class="text-blue-500 hover:underline">simanjuntakwildy@gmail.com</a></p>
+                        <p class="text-gray-700 dark:text-gray-300">Instagram: @jo.14m</p>
+                    </div>
+                </div>
+                <Placeholder class="h-32" />
+            </UCard>
+        </UModal>
+
         <section class="w-full lg:h-screen sm:px-20 md:px-2 lg:px-32">
             <div class="py-2 font-montserrat px-4 flex flex-col justify-center"
                 style="display: grid; grid-template-columns: 5px 25px 1fr; grid-template-rows: 6vmin 5.5vmin 10vmin 20px 1fr;">
