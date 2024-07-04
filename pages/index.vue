@@ -22,7 +22,7 @@ const isOpen = ref(true);
                 <div class="p-4">
                     <p class="text-gray-800 dark:text-gray-200">
                         This website is a static site intended solely for display purposes.
-                        Should you have any requests or inquiries, please contact the developer listed below:
+                        If you have any requests or questions regarding the website, please contact the developers listed below:
                     </p>
                     <div class="mt-4">
                         <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Developer Contact Information:
